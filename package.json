@@ -1,16 +1,13 @@
 {
-  "name": "invoice-app",
+  "name": "nestjs-di-tutorial",
   "version": "0.0.1",
   "description": "",
   "author": "",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc --build",
-    "migration:run": "node ./node_modules/typeorm/cli.js migration:run",
-    "migrate": "run-s build && run-s migration:run",
-    "gen-migration": "run-s build && ts-node ./node_modules/typeorm/cli.js migration:generate -n",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "npm run build && NODE_ENV=development node dist/main.js",
     "start:dev": "nest start --watch",
