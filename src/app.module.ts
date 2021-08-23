@@ -7,4 +7,6 @@ import { Module3Module } from './module3/module3.module';
   imports: [Module2Module, Module3Module.forRoot({ c: '5' })],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule {
+  
+}
