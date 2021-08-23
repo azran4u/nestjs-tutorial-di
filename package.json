@@ -12,7 +12,7 @@
     "migrate": "run-s build && run-s migration:run",
     "gen-migration": "run-s build && ts-node ./node_modules/typeorm/cli.js migration:generate -n",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "NODE_ENV=development run-s migrate && node dist/src/main.js",
+    "start": "NODE_ENV=development node dist/src/main.js",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
